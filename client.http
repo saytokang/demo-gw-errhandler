@@ -1,13 +1,17 @@
+
+# invalid header  
 GET http://localhost:8080/users/2
 Content-Type: application/json
 ###
 
+# invalid key value
 GET http://localhost:8080/users/2
 Content-Type: application/json
 H_X: 111
 ###
 
-
+# 정상적인 케이스
+# 3번까지는 정상 호출되지만, 4번째 too many exception 발생.
 GET http://localhost:8080/users/2
 Content-Type: application/json
 H_X: 1234
