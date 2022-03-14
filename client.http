@@ -1,0 +1,14 @@
+GET http://localhost:8080/users/2
+Content-Type: application/json
+###
+
+GET http://localhost:8080/users/2
+Content-Type: application/json
+H_X: 111
+###
+
+
+GET http://localhost:8080/users/2
+Content-Type: application/json
+H_X: 1234
+###
